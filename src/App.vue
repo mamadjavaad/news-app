@@ -1,4 +1,13 @@
+<script setup>
+</script>
+
 <template>
-  <routerView />
+  <v-layout>
+ 
+    
+    <routerView />
+    
+  </v-layout>
+
 </template>
 
