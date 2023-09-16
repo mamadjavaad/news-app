@@ -1,0 +1,4 @@
+<template>
+  <routerView />
+</template>
+
