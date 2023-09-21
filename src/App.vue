@@ -17,7 +17,7 @@ onMounted(() => {
     <Navbar />
 
     <routerView />
-
+    <v-footer class="text-center justify-center d-none justify-center d-sm-flex d-lg-flex d-md-flex d-xl-flex d-xxl-flex border-t py-3" > &lt; github.com/mamadjavaad &gt; © 2023</v-footer>
   </v-layout>
 </template>
 
