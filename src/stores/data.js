@@ -2,7 +2,7 @@ import { reactive, toRefs } from "vue";
 import axios from '@/axios.js';
 //state datas 
 const state = reactive({
-   apiKey:'', searchModel: null, newsData: null, category: null
+   apiKey:import.meta.env.VITE_APP_API_KEY, searchModel: null, newsData: null, category: null
 
 })
 //getting data from api
