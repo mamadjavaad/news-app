@@ -40,7 +40,7 @@ This is a simple news application built using Vue.js and Vuetify. It fetches dat
 4. **Create a `.env` file in the root directory and add your API key:**
 
     ```
-    VITE_APP_API_KEY==YOUR_API_KEY_HERE
+    VITE_APP_API_KEY=YOUR_API_KEY_HERE
     ```
 
     Replace `YOUR_API_KEY_HERE` with your actual API key obtained from [Newsdata.io](https://newsdata.io/).
