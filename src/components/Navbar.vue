@@ -13,6 +13,7 @@ const searchSubmit=()=>{
     searchModel.value=null    
   })
 }
+
 </script>
 
 <template>
@@ -20,16 +21,16 @@ const searchSubmit=()=>{
 
   <div class="w-100  bg-transparent d-flex justify-space-between align-center ">
     <a href="https://github.com/mamadjavaad" target="_blank">
-      <v-btn icon="mdi-github" variant="text"></v-btn>  
+      <v-btn icon="$mdiGithub" variant="text"></v-btn>
     </a>
     <a href="/" class="text-red-accent-2 text-h6">News App</a>
-    <v-btn icon="mdi-theme-light-dark"  @click="toggleTheme(theme)"></v-btn>
+    <v-btn icon="$mdiThemeLightDark"  @click="toggleTheme(theme)"></v-btn>
   </div>
   <div class="w-100 d-flex justify-center align-center mt-5">
     <v-responsive max-width="550" class="rounded-xl rounded">
         <div>
           <v-text-field  density="compact" variant="solo-filled"  :label="category ? 'Search in ' + category:'Search In News'"
-            append-inner-icon="mdi-magnify" single-line hide-details v-model="searchModel" @keydown.enter="searchSubmit"
+            append-inner-icon="$mdiMagnify" single-line hide-details v-model="searchModel" @keydown.enter="searchSubmit"
             @click:append-inner="searchSubmit"></v-text-field>
         </div>
 

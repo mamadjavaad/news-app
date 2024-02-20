@@ -44,22 +44,22 @@ onMounted(() => {
     <v-bottom-navigation class="d-flex d-sm-none d-lg-none d-md-none d-xl-none d-xxl-none" v-model="categoryValue"
       color="red-accent-1" grow>
       <v-btn>
-        <v-icon icon="mdi-earth" @click="changeData(null)"></v-icon>
+        <v-icon icon="$mdiEarth" @click="changeData(null)"></v-icon>
         World
       </v-btn>
       <v-btn @click="changeData('technology')">
-        <v-icon icon="mdi-text-recognition"></v-icon>
+        <v-icon icon="$mdiTextRecognition"></v-icon>
         Tech
       </v-btn>
       <v-btn>
-        <v-icon icon="mdi-dots-horizontal"></v-icon>
+        <v-icon icon="$mdiDotsHorizontal"></v-icon>
         More
         <v-overlay activator="parent" location-strategy="static" class="more-category-xs">
           <v-list>
             <v-list-subheader>Other catagories</v-list-subheader>
-            <v-list-item prepend-icon="mdi-microscope" title="Science" @click="changeData('science')"></v-list-item>
-            <v-list-item prepend-icon="mdi-basketball" title="Sports" @click="changeData('sports')"></v-list-item>
-            <v-list-item prepend-icon="mdi-bank-outline" title="Poltics" @click="changeData('politics')"></v-list-item>
+            <v-list-item prepend-icon="$mdiMicroscope" title="Science" @click="changeData('science')"></v-list-item>
+            <v-list-item prepend-icon="$mdiBasketball" title="Sports" @click="changeData('sports')"></v-list-item>
+            <v-list-item prepend-icon="$mdiBankOutline " title="Poltics" @click="changeData('politics')"></v-list-item>
           </v-list>
         </v-overlay>
       </v-btn>
