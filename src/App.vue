@@ -1,14 +1,14 @@
 <script setup>
 //importing components
 import Navbar from './components/Navbar.vue'
-//setting theme to user's default theme
+//setting theme to user's default theme and checking its saved theme
+import useThemeStore from './stores/theme.js'
+const { setTheme } = useThemeStore();
 import {onMounted} from 'vue'
 import { useTheme } from 'vuetify'
 const theme = useTheme()
 onMounted(() => {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme.global.name.value = 'dark'
-  }
+  setTheme(theme)
 })
 </script>
 

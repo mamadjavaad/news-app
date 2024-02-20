@@ -2,9 +2,9 @@
 // toggle theme
 import { useTheme } from 'vuetify'
 const theme = useTheme()
-const toggleTheme = ()=>{
-  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
-}
+import useThemeStore from '../stores/theme.js'
+const { toggleTheme } = useThemeStore();
+
 //search news
 import useState from '../stores/data';
 const {searchModel,getData,category} =useState()
@@ -23,7 +23,7 @@ const searchSubmit=()=>{
       <v-btn icon="mdi-github" variant="text"></v-btn>  
     </a>
     <a href="/" class="text-red-accent-2 text-h6">News App</a>
-    <v-btn icon="mdi-theme-light-dark"  @click="toggleTheme()"></v-btn>
+    <v-btn icon="mdi-theme-light-dark"  @click="toggleTheme(theme)"></v-btn>
   </div>
   <div class="w-100 d-flex justify-center align-center mt-5">
     <v-responsive max-width="550" class="rounded-xl rounded">
