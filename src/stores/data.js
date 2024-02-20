@@ -1,5 +1,5 @@
 import { reactive, toRefs } from "vue";
-import axios from '@/axios.js';
+import axios from '@/utils/axios.js';
 //state datas 
 const state = reactive({
    apiKey:import.meta.env.VITE_APP_API_KEY, searchModel: null, newsData: null, category: null
