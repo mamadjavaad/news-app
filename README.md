@@ -48,7 +48,7 @@ This is a simple news application built using Vue.js and Vuetify. It fetches dat
 5. **Run the application:**
 
     ```bash
-    npm run serve
+    npm run dev
     ```
 
 6. **Open your browser and navigate to `http://localhost:8080/` to view the app.**
