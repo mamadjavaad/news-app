@@ -2,6 +2,10 @@
 
 This is a simple news application built using Vue.js and Vuetify. It fetches data from the [Newsdata.io API](https://newsdata.io/).
 
+|              |              |
+|--------------|--------------|
+| <div style="text-align: center;">![desktop_preview](preview/desktop_preview.jpeg)</div> | <div style="text-align: center;">![mobile_preview](preview/mobile_preview.jpeg)</div> |
+| **Desktop Preview** | **Mobile Preview** |
 
 ## Features
 
